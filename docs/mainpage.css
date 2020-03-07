@@ -15,11 +15,15 @@ a {
     font-weight: 300;
 }
 
-#slightly_larger {
+.slightly_larger {
     font-size: large;
 }
 
 #scrolls {
     overflow-y: scroll;
-    height: 400px;
+    height: 500px;
+}
+
+.small_nav {
+    font-size: small;
 }
