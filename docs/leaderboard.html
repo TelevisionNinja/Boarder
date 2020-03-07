@@ -31,28 +31,30 @@
                 <ul class="list-group">
                     <!--Doesn't Change-->
                     <li class="list-group-item" id="slightly_larger">All-Time Leaders</li>
-                    <li class="list-group-item">
-                        <nav class="nav nav-pills flex-column flex-sm-row small_nav">
-                            <a class="flex-sm-fill text-sm-cent nav-link active" herf="#">All</a>
-                            <a class="flex-sm-fill text-sm-cent nav-link" herf="#">Interactions</a>
-                            <a class="flex-sm-fill text-sm-cent nav-link" herf="#">Wins</a>
-                        </nav>
-                    </li>
-                    <li class="list-group-item">
-                        <p><i class="fas fa-user-circle"></i>  John Doe</p>
-                        <p class="interests">Interactions: # that updates</p>
-                        <p class="interests">Wins: #that updates</p>
-                    </li>
-                    <li class="list-group-item">
-                        <p><i class="fas fa-user-circle"></i>  Tom Thumb</p>
-                        <p class="interests">Interactions: # that updates</p>
-                        <p class="interests">Wins: #that updates</p>
-                    </li>
-                    <li class="list-group-item">
-                        <p><i class="fas fa-user-circle"></i>  Craig Stevens</p>
-                        <p class="interests">Interactions: # that updates</p>
-                        <p class="interests">Wins: #that updates</p>
-                    </li>
+
+                    <div class="tab1">
+                        <button class="tablinks" onclick="openTab(event, 'All')">All</button>
+                        <button class="tablinks" onclick="openTab(event, 'Interactions')">Interactions</button>
+                        <button class="tablinks" onclick="openTab(event, 'Wins')">Wins</button>
+                        </div>
+                    
+                        <div id="All" class="All">
+                            <p><i class="fas fa-user-circle"></i>  John Doe</p>
+                            <p class="interests">Interactions: # that updates</p>
+                            <p class="interests">Wins: #that updates</p>
+                        </div>
+                    
+                        <div id="Interactions" class="Interactions">
+                            <p><i class="fas fa-user-circle"></i>  Tom Thumb</p>
+                            <p class="interests">Interactions: # that updates</p>
+                            <p class="interests">Wins: #that updates</p>
+                        </div>
+                    
+                        <div id="Wins" class="Wins">
+                            <p><i class="fas fa-user-circle"></i>  Craig Stevens</p>
+                            <p class="interests">Interactions: # that updates</p>
+                            <p class="interests">Wins: #that updates</p>
+                        </div>
                 </ul>
             </div>
 
@@ -61,57 +63,37 @@
                 <ul class="list-group">
                     <!--Doesn't Change-->
                     <li class="list-group-item" id="slightly_larger">Regional Leaders</li>
-                    <li class="list-group-item">
-                        <nav class="nav nav-pills flex-column flex-sm-row small_nav">
-                            <a class="flex-sm-fill text-sm-cent nav-link active" herf="#">All</a>
-                            <a class="flex-sm-fill text-sm-cent nav-link" herf="#">Interactions</a>
-                            <a class="flex-sm-fill text-sm-cent nav-link" herf="#">Wins</a>
-                        </nav>
-                    </li>
-                    <li class="list-group-item">
-                        <p><i class="fas fa-user-circle"></i>  John Doe</p>
-                        <p class="interests">Interactions: # that updates</p>
-                        <p class="interests">Wins: #that updates</p>
-                    </li>
-                    <li class="list-group-item">
-                        <p><i class="fas fa-user-circle"></i>  Tom Thumb</p>
-                        <p class="interests">Interactions: # that updates</p>
-                        <p class="interests">Wins: #that updates</p>
-                    </li>
-                    <li class="list-group-item">
-                        <p><i class="fas fa-user-circle"></i>  Craig Stevens</p>
-                        <p class="interests">Interactions: # that updates</p>
-                        <p class="interests">Wins: #that updates</p>
-                    </li>
+
+                    <div class="tab2">
+                        <button class="tablinks" onclick="openTab(event, 'All')">All</button>
+                        <button class="tablinks" onclick="openTab(event, 'Interactions')">Interactions</button>
+                        <button class="tablinks" onclick="openTab(event, 'Wins')">Wins</button>
+                        </div>
+                    
+                        <div id="All" class="All">
+                            <p><i class="fas fa-user-circle"></i>  John Doe</p>
+                            <p class="interests">Interactions: # that updates</p>
+                            <p class="interests">Wins: #that updates</p>
+                        </div>
+                    
+                        <div id="Interactions" class="Interactions">
+                            <p><i class="fas fa-user-circle"></i>  Tom Thumb</p>
+                            <p class="interests">Interactions: # that updates</p>
+                            <p class="interests">Wins: #that updates</p>
+                        </div>
+                    
+                        <div id="Wins" class="Wins">
+                            <p><i class="fas fa-user-circle"></i>  Craig Stevens</p>
+                            <p class="interests">Interactions: # that updates</p>
+                            <p class="interests">Wins: #that updates</p>
+                        </div>
+
                 </ul>
             </div>
 
         </div>
     </div>
     </body>
-
-    <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Messages')">Messages</button>
-        <button class="tablinks" onclick="openTab(event, 'Map')">Map</button>
-        <button class="tablinks" onclick="openTab(event, 'Leaderboards')">Leaderboards</button>
-        <button class="tablinks" onclick="openTab(event, 'Login')">Login</button>
-        </div>
-    
-        <div id="Messages" class="tabcontent">
-        </nav-link active href="messages.html">
-        </div>
-    
-        <div id="Map" class="tabcontent">
-        </nav-link active href="map.html">
-        </div>
-    
-        <div id="Leaderboards" class="tabcontent">
-        </nav-link active href="leaderboard.html">
-        </div>
-    
-        <div id="Login" class="tabcontent">
-        </nav-link active href="index.html">
-        </div>
 
     <style>/* tab stuff */
         body {font-family: Arial;}
