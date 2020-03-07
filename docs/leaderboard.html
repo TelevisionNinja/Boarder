@@ -34,24 +34,24 @@
 
                     <div id="code-box-1">
                         <div class="code-tabs">
-                            <button class="tablinks" onclick="openTab(event, 'All','code-box-1')" id="defaultOpen-1">All</button>
-                            <button class="tablinks" onclick="openTab(event, 'Interactions','code-box-1')">Interactions</button>
-                            <button class="tablinks" onclick="openTab(event, 'Wins','code-box-1')">Wins</button>
+                            <button class="tablinks" onclick="openTab(event, 'All', 'code-box-1')" id="defaultOpen-1">All</button>
+                            <button class="tablinks" onclick="openTab(event, 'Interactions', 'code-box-1')">Interactions</button>
+                            <button class="tablinks" onclick="openTab(event, 'Wins', 'code-box-1')">Wins</button>
                         </div>
                     
-                        <div id="All" class="sg-tab-content">
+                        <div id="All" class="tabcontent">
                             <p><i class="fas fa-user-circle"></i>  John Doe</p>
                             <p class="interests">Interactions: # that updates</p>
                             <p class="interests">Wins: #that updates</p>
                         </div>
                     
-                        <div id="Interactions" class="sg-tab-content">
+                        <div id="Interactions" class="tabcontent">
                             <p><i class="fas fa-user-circle"></i>  Tom Thumb</p>
                             <p class="interests">Interactions: # that updates</p>
                             <p class="interests">Wins: #that updates</p>
                         </div>
                     
-                        <div id="Wins" class="sg-tab-content">
+                        <div id="Wins" class="tabcontent">
                             <p><i class="fas fa-user-circle"></i>  Craig Stevens</p>
                             <p class="interests">Interactions: # that updates</p>
                             <p class="interests">Wins: #that updates</p>
@@ -69,24 +69,24 @@
                     
                     <div id="code-box-2">
                         <div class="code-tabs">
-                            <button class="tablinks" onclick="openTab(event, 'All2','code-box-2')" id="defaultOpen-2">All</button>
-                            <button class="tablinks" onclick="openTab(event, 'Interactions2','code-box-2')">Interactions</button>
-                            <button class="tablinks" onclick="openTab(event, 'Wins2','code-box-2')">Wins</button>
+                            <button class="tablinks" onclick="openTab(event, 'All2', 'code-box-2')" id="defaultOpen-2">All</button>
+                            <button class="tablinks" onclick="openTab(event, 'Interactions2', 'code-box-2')">Interactions</button>
+                            <button class="tablinks" onclick="openTab(event, 'Wins2', 'code-box-2')">Wins</button>
                         </div>
                     
-                        <div id="All2" class="sg-tab-content">
+                        <div id="All2" class="tabcontent">
                             <p><i class="fas fa-user-circle"></i>  John Doe</p>
                             <p class="interests">Interactions: # that updates</p>
                             <p class="interests">Wins: #that updates</p>
                         </div>
                     
-                        <div id="Interactions2" class="sg-tab-content">
+                        <div id="Interactions2" class="tabcontent">
                             <p><i class="fas fa-user-circle"></i>  Tom Thumb</p>
                             <p class="interests">Interactions: # that updates</p>
                             <p class="interests">Wins: #that updates</p>
                         </div>
                     
-                        <div id="Wins2" class="sg-tab-content">
+                        <div id="Wins2" class="tabcontent">
                             <p><i class="fas fa-user-circle"></i>  Craig Stevens</p>
                             <p class="interests">Interactions: # that updates</p>
                             <p class="interests">Wins: #that updates</p>
@@ -152,17 +152,17 @@
 
     var box = document.getElementById(boxName)
 
-    tabcontent = box.getElementsByClassName("sg-tab-content");
+    tabcontent = box.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
     tablinks = box.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" sg-current", "");
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
     document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " sg-current";
+    evt.currentTarget.className += " active";
 }
 </script>
