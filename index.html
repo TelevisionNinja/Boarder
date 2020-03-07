@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/50085274e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Spartan:300,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="mainpage.css">
+    <title>Hobber: Map</title>
+</head>
+<body>
+    <!--Header for website-->
+    <div class="alert alert-dark" id="heading" role="alert">Hobber</div> 
+
+    <!--Navigation Bar-->
+        <nav class="nav nav-pills flex-column flex-sm-row">
+        <a class="flex-sm-fill text-sm-center nav-link" href="#"><i class="fas fa-envelope"></i>  Messages</a>
+        <a class="flex-sm-fill text-sm-center nav-link active" href="#"><i class="fas fa-globe"></i>  Map</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="#"><i class="fas fa-list-ol"></i>  Leaderboards</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="#"><i class="fas fa-user"></i>  Login</a>
+      </nav>
+
+    <!--Main Part of Page-->
+    <div>
+        <div class="row">
+
+            <!--People Nearby-->
+            <div class="col-sm" id="scrolls">
+                <ul class="list-group">
+                    <!--Doesn't Change-->
+                    <li class="list-group-item" id="slightly_larger">People Nearby</li>
+                    <!--Part that needs to change-->
+                    <li class="list-group-item">
+                        <p class="justify-content-between"><i class="fas fa-user-circle"></i>  John Doe <small> miles away</small></p>
+                        <p class="interests">Shared Interests: Monoply, Risk</p>
+                        <a href="#">Message</a>
+                    </li>
+                    <li class="list-group-item">
+                        <p><i class="fas fa-user-circle"></i>  Tom Thumb <small> miles away</small></p>
+                        <p class="interests">Shared Interests: Chutes and Ladders</p>
+                        <a href="#">Message</a>
+                    </li>
+                    <li class="list-group-item">
+                        <p><i class="fas fa-user-circle"></i>  Craig Stevens <small> miles away</small></p>
+                        <p class="interests">Shared Interests: Risk</p>
+                        <a href="#">Message</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Map-->
+            <div class="col-sm">
+                <iframe frameborder=0 style='width:100%;height:500px;' src='https://www.zeemaps.com/view?group=3734606&x=-94.169743&y=36.064130&z=4'> </iframe>
+            </div>
+
+        </div>
+    </div>
+    </body>
+</html>
