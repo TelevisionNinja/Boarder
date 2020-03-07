@@ -3,6 +3,16 @@
     font-family: 'Spartan', sans-serif;
     font-weight: 600;
     font-size: larger;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.margined {
+    margin-bottom: 16px;
+}
+.bordered {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 a {
@@ -26,4 +36,30 @@ a {
 
 .small_nav {
     font-size: small;
+}
+
+.full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full_grey {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.white_border {
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+}
+
+.spaced {
+    margin-top: 16px;
+}
+
+h1 {
+    text-align: center;
 }

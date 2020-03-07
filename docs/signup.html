@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/50085274e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Spartan:300,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="mainpage.css">
+    <title>Boarder: Sign-up</title>
+</head>
+<body>
+    <!--Header for website-->
+    <div class="alert alert-dark" id="heading" role="alert"><img src="/Users/kimbell/Desktop/Hobber/images/LogoMakr_9QaPuq.png"></div> 
+
+    <!--Navigation Bar-->
+        <nav class="nav nav-pills flex-column flex-sm-row margined">
+        <a class="flex-sm-fill text-sm-center nav-link" href="/Users/kimbell/Desktop/Hobber/Backup/messages.html"><i class="fas fa-envelope"></i>  Messages</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="/Users/kimbell/Desktop/Hobber/Backup/map.html"><i class="fas fa-globe"></i>  Map</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="/Users/kimbell/Desktop/Hobber/Backup/leaderboard.html"><i class="fas fa-list-ol"></i>  Leaderboards</a>
+        <a class="flex-sm-fill text-sm-center nav-link active" href="/Users/kimbell/Desktop/Hobber/Backup/homepage.html"><i class="fas fa-user"></i>  Login</a>
+      </nav>
+
+    <!--Main Part of Page-->
+    <div>
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm">
+                <!--Returning User-->
+                <form>
+                    <div class="form-group">
+                        <p class="slightly_larger">Signing up for Boarder is easy! Let's get started.</p>
+                        <label for="exampleInputFirstName">First Name</label>
+                        <input class="form-control" type="text" placeholder="John">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputLastName">Last Name</label>
+                        <input class="form-control" type="text" placeholder="Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputImage">Profile Pic</label>
+                        <input type="file" class="form-control-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputAddress1">Address</label>
+                        <input class="form-control" type="text" placeholder="Street Address">
+                        <p></p>
+                        <input class="form-control" type="text" placeholder="Apt # (opt)">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputCity">City</label>
+                        <input class="form-control" type="text" placeholder="City">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputLastName">State</label>
+                        <input class="form-control" type="text" placeholder="State">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword2">Re-enter Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div>
+                        <a type="submit" class="btn btn-primary btn-block" href="profile.html">Sign-up!</a>
+                    </div>
+                    <p></p>
+                </form>
+            </div>
+            <div class="col-sm"></div>
+        </div>
+    </div>
+    </body>
+</html>
