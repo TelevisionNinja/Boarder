@@ -32,10 +32,10 @@
                     <!--Doesn't Change-->
                     <li class="list-group-item" id="slightly_larger">All-Time Leaders</li>
 
-                    <div class="tab1">
-                        <button class="tablinks" onclick="openTab(event, 'All')">All</button>
-                        <button class="tablinks" onclick="openTab(event, 'Interactions')">Interactions</button>
-                        <button class="tablinks" onclick="openTab(event, 'Wins')">Wins</button>
+                    <div class="tab">
+                        <button class="tablinks" onclick="openTab(event, 'All', 'tablinks', 'tabcontent')">All</button>
+                        <button class="tablinks" onclick="openTab(event, 'Interactions', 'tablinks', 'tabcontent')">Interactions</button>
+                        <button class="tablinks" onclick="openTab(event, 'Wins', 'tablinks', 'tabcontent')">Wins</button>
                         </div>
                     
                         <!--all tab-->
@@ -63,32 +63,32 @@
 
             <!--Begin Regional Leaderboard-->
             <div class="col-sm">
-                <ul class="list-group2">
+                <ul class="list-group">
                     <!--Doesn't Change-->
                     <li class="list-group-item" id="slightly_larger">Regional Leaders</li>
 
-                    <div class="tab2">
-                        <button class="tablinks" onclick="openTab2(event, 'All2')">All</button>
-                        <button class="tablinks" onclick="openTab2(event, 'Interactions2')">Interactions</button>
-                        <button class="tablinks" onclick="openTab2(event, 'Wins2')">Wins</button>
+                    <div class="tab">
+                        <button class="tablinks2" onclick="openTab(event, 'All2', 'tablinks2', 'tabcontent2')">All</button>
+                        <button class="tablinks2" onclick="openTab(event, 'Interactions2', 'tablinks2', 'tabcontent2')">Interactions</button>
+                        <button class="tablinks2" onclick="openTab(event, 'Wins2', 'tablinks2', 'tabcontent2')">Wins</button>
                         </div>
                     
                         <!--all tab-->
-                        <div id="All2" class="tabcontent">
+                        <div id="All2" class="tabcontent2">
                             <p><i class="fas fa-user-circle"></i>  John Doe</p>
                             <p class="interests">Interactions: # that updates</p>
                             <p class="interests">Wins: #that updates</p>
                         </div>
                     
                         <!--interactions tab-->
-                        <div id="Interactions2" class="tabcontent">
+                        <div id="Interactions2" class="tabcontent2">
                             <p><i class="fas fa-user-circle"></i>  Tom Thumb</p>
                             <p class="interests">Interactions: # that updates</p>
                             <p class="interests">Wins: #that updates</p>
                         </div>
                     
                         <!--wins tab-->
-                        <div id="Wins2" class="tabcontent">
+                        <div id="Wins2" class="tabcontent2">
                             <p><i class="fas fa-user-circle"></i>  Craig Stevens</p>
                             <p class="interests">Interactions: # that updates</p>
                             <p class="interests">Wins: #that updates</p>
@@ -146,27 +146,13 @@
 
 <script>
     //js tab funtionality
-    function openTab(evt, tabName) {
+    function openTab(evt, tabName, tablinksStr, tabcontentStr) {
       var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
+      tabcontent = document.getElementsByClassName(tabcontentStr);
       for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
       }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-
-    function openTab2(evt, tabName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
+      tablinks = document.getElementsByClassName(tablinksStr);
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
