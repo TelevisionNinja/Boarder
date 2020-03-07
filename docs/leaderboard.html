@@ -38,18 +38,21 @@
                         <button class="tablinks" onclick="openTab(event, 'Wins')">Wins</button>
                         </div>
                     
+                        <!--all tab-->
                         <div id="All" class="tabcontent">
                             <p><i class="fas fa-user-circle"></i>  John Doe</p>
                             <p class="interests">Interactions: # that updates</p>
                             <p class="interests">Wins: #that updates</p>
                         </div>
                     
+                        <!--interactions tab-->
                         <div id="Interactions" class="tabcontent">
                             <p><i class="fas fa-user-circle"></i>  Tom Thumb</p>
                             <p class="interests">Interactions: # that updates</p>
                             <p class="interests">Wins: #that updates</p>
                         </div>
                     
+                        <!--wins tab-->
                         <div id="Wins" class="tabcontent">
                             <p><i class="fas fa-user-circle"></i>  Craig Stevens</p>
                             <p class="interests">Interactions: # that updates</p>
@@ -65,23 +68,26 @@
                     <li class="list-group-item" id="slightly_larger">Regional Leaders</li>
 
                     <div class="tab2">
-                        <button class="tablinks" onclick="openTab(event, 'All2')">All</button>
-                        <button class="tablinks" onclick="openTab(event, 'Interactions2')">Interactions</button>
-                        <button class="tablinks" onclick="openTab(event, 'Wins2')">Wins</button>
+                        <button class="tablinks" onclick="openTab2(event, 'All2')">All</button>
+                        <button class="tablinks" onclick="openTab2(event, 'Interactions2')">Interactions</button>
+                        <button class="tablinks" onclick="openTab2(event, 'Wins2')">Wins</button>
                         </div>
                     
+                        <!--all tab-->
                         <div id="All2" class="tabcontent">
                             <p><i class="fas fa-user-circle"></i>  John Doe</p>
                             <p class="interests">Interactions: # that updates</p>
                             <p class="interests">Wins: #that updates</p>
                         </div>
                     
+                        <!--interactions tab-->
                         <div id="Interactions2" class="tabcontent">
                             <p><i class="fas fa-user-circle"></i>  Tom Thumb</p>
                             <p class="interests">Interactions: # that updates</p>
                             <p class="interests">Wins: #that updates</p>
                         </div>
                     
+                        <!--wins tab-->
                         <div id="Wins2" class="tabcontent">
                             <p><i class="fas fa-user-circle"></i>  Craig Stevens</p>
                             <p class="interests">Interactions: # that updates</p>
@@ -141,6 +147,20 @@
 <script>
     //js tab funtionality
     function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    function openTab2(evt, tabName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
