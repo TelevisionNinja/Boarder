@@ -1,5 +1,6 @@
 # Boarder
 JB Hunt Hackathon Spring 2020
+Team of 3
 Theme: Hobbies
 
 Boarder is Tinder but for board game enthusiasts
